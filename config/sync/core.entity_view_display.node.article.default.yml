@@ -1,0 +1,77 @@
+uuid: 7e78e77e-3996-4462-afef-3df3ab62a9f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.default
+    - field.field.node.article.comment
+    - field.field.node.article.field_category
+    - field.field.node.article.field_main_media
+    - field.field.node.article.field_paragraphs
+    - field.field.node.article.field_tags
+    - node.type.article
+  module:
+    - comment
+    - layout_paragraphs
+    - user
+_core:
+  default_config_hash: br6izr-iGEu--JvNbCJNtOBpRnxpFLXfoV5y61U9Nqc
+id: node.article.default
+targetEntityType: node
+bundle: article
+mode: default
+content:
+  comment:
+    type: comment_default
+    label: hidden
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_category:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_main_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_paragraphs:
+    type: layout_paragraphs_builder
+    label: hidden
+    settings:
+      view_mode: narrow
+      link: ''
+      preview_view_mode: narrow
+      form_display_mode: default
+      nesting_depth: 0
+      require_layouts: 0
+      empty_message: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

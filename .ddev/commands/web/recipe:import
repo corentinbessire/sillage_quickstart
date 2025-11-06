@@ -1,0 +1,32 @@
+#!/bin/bash
+
+## Description: Import Recipe from `recipes` folder
+## Usage: recipe:import  <recipe-name>
+## Example: "ddev recipe:import base"
+
+if [ -z "$1" ]; then
+    echo "Error: Recipe name is required"
+    echo "Usage: ddev recipe:import base"
+    exit 1
+fi
+
+recipe_name=$1
+shift
+recipe_directory=/var/www/html/recipes/$recipe_name
+
+echo $recipe_directory
+
+if [ ! -d "/var/www/html/recipes/$recipe_name" ]; then
+    echo "Error: Recipe '$recipe_name' not found in recipes/$recipe_name"
+    exit 1
+fi
+
+if [  -f $recipe_directory/composer.txt ]; then
+  package_names=($(<$recipe_directory/composer.txt))
+  for package_name in "${package_names[@]}"; do
+    composer require "$package_name"
+  done
+    drush cache:rebuild -y
+fi
+cd web
+php core/scripts/drupal recipe ../recipes/$recipe_name -v

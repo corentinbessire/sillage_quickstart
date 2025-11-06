@@ -1,0 +1,25 @@
+uuid: 39447155-3c05-4faa-9985-d15e485d65f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - sillage
+id: sillage_mobile_user_account_menu
+theme: sillage
+region: mobile_header
+weight: -4
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 70216c7f-72de-4455-99df-e16e70fe7f92
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sillage
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: sillage_breadcrumbs
+theme: sillage
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

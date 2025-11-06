@@ -1,0 +1,9 @@
+uuid: ae1b5dc5-e7ef-4a8e-bf53-29dd329c6a7f
+langcode: en
+status: true
+dependencies: {  }
+name: Categories
+vid: categories
+description: 'Use Categories to group content on predefined main subject'
+weight: 0
+new_revision: false

@@ -1,0 +1,11 @@
+#!/bin/bash
+## Description: Run npx commands in the Sillage theme directory
+## Usage: sillage:npx  <npx-command> [args]
+## Example: "ddev sillage:npx install" or "ddev sillage:npx run build"
+
+if [ ! -d "/var/www/html/web/themes/custom/sillage" ]; then
+    echo "Error: Theme 'sillage' not found in web/themes/custom/"
+    exit 1
+fi
+cd /var/www/html/web/themes/custom/sillage || exit
+exec npx "$@"

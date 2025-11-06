@@ -1,0 +1,37 @@
+# Ignore dependencies that are managed with Composer.
+# Generally you should only ignore the root vendor directory. It's important
+# that core/assets/vendor and any other vendor directories within contrib or
+# custom module, theme, etc., are not ignored unless you purposely do so.
+/vendor/
+web/core
+web/modules/contrib
+web/themes/contrib
+**/node_modules
+
+# Ignore configuration files that may contain sensitive information.
+web/sites/*/services*.yml
+
+# Ignore paths that contain user-generated content.
+web/sites/*/files
+web/sites/*/private
+
+# Ignore Build folder of Custom Theme
+web/themes/custom/*/build
+web/themes/custom/*/build/*
+
+# Ignore SimpleTest multi-site environment.
+web/sites/simpletest
+
+# Ignore Editor files and Folders
+.idea
+
+# Ignore OS files
+.DS_Store
+
+# Ignore Local configuration
+settings.local.php
+.env
+
+# Ignore DUMP
+*.sql
+*.sql.*

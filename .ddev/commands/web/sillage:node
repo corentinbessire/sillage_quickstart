@@ -1,0 +1,12 @@
+#!/bin/bash
+
+## Description: NODE Command in Sillage theme folder
+## Usage:  sillage:node  <node-command> [args]
+## Example: "ddev sillage:node install
+
+if [ ! -d "/var/www/html/web/themes/custom/sillage" ]; then
+    echo "Error: Theme 'sillage' not found in web/themes/custom/"
+    exit 1
+fi
+cd /var/www/html/web/themes/custom/sillage || exit
+exec node "$@"

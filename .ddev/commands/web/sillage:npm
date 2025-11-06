@@ -1,0 +1,11 @@
+#!/bin/bash
+## Description: Run npm commands in the Sillage theme directory
+## Usage: sillage:npm  <npm-command> [args]
+## Example: "ddev sillage:npm install" or "ddev sillage:npm run build"
+
+if [ ! -d "/var/www/html/web/themes/custom/sillage" ]; then
+    echo "Error: Theme 'sillage' not found in web/themes/custom/"
+    exit 1
+fi
+cd /var/www/html/web/themes/custom/sillage || exit
+exec npm "$@"

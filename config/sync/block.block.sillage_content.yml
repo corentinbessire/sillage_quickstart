@@ -1,0 +1,22 @@
+uuid: 378647b5-14fd-4d0b-a71e-d3c4d6c54dab
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sillage
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: sillage_content
+theme: sillage
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

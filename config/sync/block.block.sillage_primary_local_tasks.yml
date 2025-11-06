@@ -1,0 +1,22 @@
+uuid: da249fae-1766-4a0d-8b8b-946df9ff5b3d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - sillage
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: sillage_primary_local_tasks
+theme: sillage
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

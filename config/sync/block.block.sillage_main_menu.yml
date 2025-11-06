@@ -1,0 +1,27 @@
+uuid: 9c9a351d-47da-426a-bf29-997b8a0fd78a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - sillage
+_core:
+  default_config_hash: KWAiziL39uEzmOJEql_wbUP2RtqGceL3WM2CfxhMelE
+id: sillage_main_menu
+theme: sillage
+region: header
+weight: 10
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: true
+visibility: {  }

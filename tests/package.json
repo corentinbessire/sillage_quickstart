@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start": "cypress run --quiet",
+    "install": "cypress install"
+  },
+  "devDependencies": {
+    "cypress": "^13.3.3",
+    "typescript": "^5.2.2"
+  }
+}

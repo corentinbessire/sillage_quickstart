@@ -1,0 +1,25 @@
+uuid: db9cc8f9-4ae9-42ab-b8ae-fef3f1ad95f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - sillage
+id: sillage_account_menu
+theme: sillage
+region: header
+weight: -2
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }

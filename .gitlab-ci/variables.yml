@@ -1,0 +1,54 @@
+################################################################################
+# Default Variables.
+################################################################################
+
+.default_variables:
+
+  ################################################################################
+  # GENERAL VARIABLES
+  CI_PHP_VERSION: "8.3"
+  CI_NODE_VERSION: "22"
+  CI_DRUPAL_VERSION: "10.3"
+  CI_DRUPAL_WEB_ROOT: web
+  CI_DOC_ROOT: "/builds/[GITLAB_GROUP]]/[GITLAB_REPO]"
+  CI_WEB_ROOT: "${CI_DOC_ROOT}/${CI_DRUPAL_WEB_ROOT}"
+  CI_THEME_ROOT: "web/themes/custom/tadstack"
+
+  ################################################################################
+  # QA VARIABLES
+  CI_DIRS_QA_PHPCS: "${CI_WEB_ROOT}/**/custom"
+  CI_DIRS_QA_PHPSTAN: "${CI_WEB_ROOT}/**/custom"
+
+  CI_QA_IGNORE: "*/vendor/*,*/bootstrap/*,*/tests/*,*/.gitlab-ci/*,Readme.md,style.css,print.css,*Test.php"
+  CI_QA_SUFFIX: "php,inc,module,install,test,profile,theme"
+  #
+  CI_QA_PHPCS_STANDARD: "Drupal,DrupalPractice"
+  #
+  CI_QA_CONFIG_PHPSTAN: ${CI_PROJECT_DIR}/phpstan.neon
+
+  ################################################################################
+  # CD ENVIRONEMENT VARIABLES
+  ################################################################################
+  DEV_URL: ""
+  DEV_SSH_HOST: ""
+  DEV_SSH_PORT: 22
+  DEV_SSH_OPTIONS: ""
+  DEV_PROJECT_REMOTE_DIR: ""
+  DEV_PROJECT_REMOTE_WEBROOT: ""
+
+  STAGE_URL: ""
+  STAGE_SSH_HOST: ""
+  STAGE_SSH_PORT: 22
+  STAGE_SSH_OPTIONS: ""
+  STAGE_PROJECT_REMOTE_DIR: ""
+  STAGE_PROJECT_REMOTE_WEBROOT: ""
+
+  PROD_URL: ""
+  PROD_SSH_HOST: ""
+  PORT_SSH_PORT: 22
+  PROD_SSH_OPTIONS: ""
+  PROD_PROJECT_REMOTE_DIR: ""
+  PROD_PROJECT_REMOTE_WEBROOT: ""
+
+
+

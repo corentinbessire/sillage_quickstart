@@ -1,0 +1,33 @@
+dev:
+  host:
+  options: { }
+  paths:
+    drush-script:
+    files:
+  root:
+  ssh:
+    options: ''
+  uri: ''
+  user:
+stage:
+  host:
+  options: { }
+  paths:
+    drush-script:
+    files:
+  root:
+  ssh:
+    options: ''
+  uri: ''
+  user:
+prod:
+  host:
+  options: { }
+  paths:
+    drush-script:
+    files:
+  root:
+  ssh:
+    options: ''
+  uri: ''
+  user:
