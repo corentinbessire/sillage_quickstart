@@ -1,4 +1,4 @@
-name: sillage
+name: sillage-quickstart
 type: drupal11
 docroot: web
 php_version: "8.3"
@@ -6,7 +6,7 @@ webserver_type: apache-fpm
 xdebug_enabled: false
 additional_hostnames: []
 additional_fqdns:
-    - sillage.local
+    - sillage-fqdns.local
 database:
     type: mariadb
     version: "10.11"
