@@ -1,0 +1,13 @@
+uuid: 2c328baa-1301-4936-b408-5e7345a05d4e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_trail_by_path
+third_party_settings:
+  menu_trail_by_path:
+    trail_source: ''
+id: site-hierarchy
+label: 'Site Hierarchy'
+description: 'This menu should not be displayed. Used to build the Path of content'
+locked: false

@@ -1,7 +1,18 @@
 uuid: 4eda8867-8d88-4301-b830-3f3e7a539c7f
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - menu_force
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - site-hierarchy
+    parent: 'site-hierarchy:'
+  menu_force:
+    menu_force: true
+    menu_force_parent: false
 _core:
   default_config_hash: i0snV8Wj--OkRW12UdachUiYiz3FbeMwHu_pZYfzKLc
 name: 'Basic page'
