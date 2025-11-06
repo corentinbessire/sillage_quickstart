@@ -24,8 +24,11 @@
         "drupal/gin_toolbar": "^3.0",
         "drupal/layout_paragraphs": "^2.1",
         "drupal/layout_paragraphs_limit": "^1.0",
+        "drupal/menu_force": "^2.0",
         "drupal/menu_item_extras": "^3.1",
+        "drupal/menu_trail_by_path": "^2.2",
         "drupal/paragraphs": "^1.19",
+        "drupal/pathauto": "^1.14",
         "drupal/svg_image": "^3.2",
         "drush/drush": "^13.6"
     },
