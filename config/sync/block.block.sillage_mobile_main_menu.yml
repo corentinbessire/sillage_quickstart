@@ -8,7 +8,7 @@ dependencies:
     - system
   theme:
     - sillage
-id: mobile_main_menu
+id: sillage_mobile_main_menu
 theme: sillage
 region: mobile_header
 weight: 10

@@ -6,7 +6,7 @@ dependencies:
     - system
   theme:
     - sillage
-id: mobile_site_branding
+id: sillage_mobile_site_branding
 theme: sillage
 region: mobile_header
 weight: 0

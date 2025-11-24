@@ -1,0 +1,17 @@
+#!/bin/bash
+
+## Description: CLean install from Configuration.
+## Usage: project:setup [environment]
+## Example: "ddev project:setup"
+
+cd /var/www/html/web
+
+echo "Dropping local database"
+drush -y sql:drop
+
+echo "Installing fro Config"
+drush -y site:install --existing-config
+
+echo "Reseting Admin Password"
+drush -y upwd admin admin
+
