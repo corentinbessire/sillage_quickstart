@@ -7,9 +7,9 @@ dependencies:
   module:
     - system
   theme:
-    - sillage
-id: sillage_footer
-theme: sillage
+    - lug
+id: lug_footer
+theme: lug
 region: footer
 weight: 0
 provider: null

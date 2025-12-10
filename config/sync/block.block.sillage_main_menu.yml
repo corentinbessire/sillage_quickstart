@@ -7,11 +7,11 @@ dependencies:
   module:
     - system
   theme:
-    - sillage
+    - lug
 _core:
   default_config_hash: KWAiziL39uEzmOJEql_wbUP2RtqGceL3WM2CfxhMelE
-id: sillage_main_menu
-theme: sillage
+id: lug_main_menu
+theme: lug
 region: header
 weight: 10
 provider: null

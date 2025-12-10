@@ -5,11 +5,11 @@ dependencies:
   module:
     - system
   theme:
-    - sillage
+    - lug
 _core:
   default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
-id: sillage_content
-theme: sillage
+id: lug_content
+theme: lug
 region: content
 weight: 0
 provider: null

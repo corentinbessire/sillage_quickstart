@@ -3,11 +3,11 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - sillage
+    - lug
 _core:
   default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
-id: sillage_primary_local_tasks
-theme: sillage
+id: lug_primary_local_tasks
+theme: lug
 region: highlighted
 weight: -4
 provider: null

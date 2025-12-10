@@ -5,9 +5,9 @@ dependencies:
   module:
     - system
   theme:
-    - sillage
-id: sillage_mobile_site_branding
-theme: sillage
+    - lug
+id: lug_mobile_site_branding
+theme: lug
 region: mobile_header
 weight: 0
 provider: null

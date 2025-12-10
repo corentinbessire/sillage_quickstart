@@ -37,7 +37,7 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
-  sillage_layouts: 0
+  lug_layouts: 0
   svg_image: 0
   system: 0
   taxonomy: 0
@@ -55,6 +55,6 @@ theme:
   olivero: 0
   claro: 0
   stable9: 0
-  sillage: 0
+  lug: 0
   gin: 0
 theme_admin: gin

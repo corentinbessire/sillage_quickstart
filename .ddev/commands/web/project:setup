@@ -1,17 +1,39 @@
 #!/bin/bash
 
-## Description: CLean install from Configuration.
-## Usage: project:setup [environment]
+## Description: Clean install from Configuration.
+## Usage: project:setup
 ## Example: "ddev project:setup"
+
+cd /var/www/html
+composer install --prefer-dist
 
 cd /var/www/html/web
 
 echo "Dropping local database"
 drush -y sql:drop
 
-echo "Installing fro Config"
+echo "Creating local settings"
+cp web/sites/exemple.settings.local.php web/sites/default/settings.local.php
+
+echo "Installing from Config"
 drush -y site:install --existing-config
+
+echo "Importing Default Content"
+drush -y default-content-deploy:import
 
 echo "Reseting Admin Password"
 drush -y upwd admin admin
 
+echo "Building Theme"
+if [ ! -d "/var/www/html/web/themes/custom/lug" ]; then
+    echo "Error: Theme 'lug' not found in web/themes/custom/"
+    exit 1
+fi
+cd /var/www/html/web/themes/custom/lug || exit
+npm install
+npm run build
+
+echo "Reseting Admin Password"
+drush -y upwd admin admin
+
+drush uli --uid=1 --uri="https://dagda.local"
